@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #6350df, #564ee2);
+    text-align: center;
+    font-family: 'Oswald',  sans-serif;            
+}
+
+div {
+    text-align: center;
+}
+
+div >p {
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: rgb(94, 27, 182);
+    width: 300px;
+    text-align: center;
+}
+       
+
+h1 {
+    text-align: center;            
+}
+
+.confirmar {
+    background-color: green;
+    color: white;
+}
+
+
+.enfeite {
+    color: rgb(0, 0, 0);
+}

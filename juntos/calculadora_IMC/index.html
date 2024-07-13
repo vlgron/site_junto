@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<title>Calculadora</title>
+<link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+
+    <label for="numero1">Digite seu peso:</label>
+    <input type="number" id="numero1" placeholder="Digite seu peso:"><br><br>
+    
+    <select id="operacao">
+        <option value="%">%</option>
+    </select><br><br>
+
+    <label for="numero2">Digite sua altura:</label>
+    <input type="number" id="numero2" placeholder="Digite sua altura:"><br><br>
+
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <p id="resultado"></p>
+    <p id="num3"></p>
+
+    <script>
+        function calcular() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var operacao = document.getElementById("operacao").value;
+            var resultado;
+
+            switch (operacao) {
+                case "%":
+                    resultado =  (num2 * num2) /num1 ;
+                    break;
+                default:
+                    resultado = "Operação inválida";
+            }
+
+            document.getElementById("resultado").innerText = "Seu Imc: " + resultado;
+        }
+    </script>
+    <p><a style="color: white;" href="../matematica.html">Voltar</a></p>
+</body>
+</html>
